@@ -109,3 +109,7 @@ div.wpcf7 .wpcf7-submit:disabled {
 .wpcf7 input[type="tel"] {
 	direction: ltr;
 }
+
+.footer-widget {
+	background-color: rgb(255, 68, 68);
+}
