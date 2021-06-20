@@ -10,6 +10,14 @@
     margin-bottom: 60px;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.header {
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .ball-pulse-sync>div,
