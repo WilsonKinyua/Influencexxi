@@ -1,887 +1,427 @@
-<!doctype html>
-<html lang="en-US">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="profile" href="https://gmpg.org/xfn/11" />
-    <title>InfluenceXXI &#8211; Homepage</title>
-    <meta name='robots' content='noindex,nofollow' />
-    <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
-    <link rel='dns-prefetch' href='http://s.w.org/' />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
-
-    <link rel='stylesheet' id='wp-block-library-css' href='assets/css/style.min.css' type='text/css' media='all' />
-
-    <link rel='stylesheet' id='contact-form-7-css' href='assets/css/styles.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='rs-plugin-settings-css' href='assets/css/rs6.css' type='text/css' media='all' />
-
-    <link rel='stylesheet' id='minimag-fonts-css'
-        href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100i%2C200%2C200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%7CHind%3A300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;ver=5.4.6'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='minimag-stylesheet-css' href='assets/css/style-min.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='js_composer_front-css' href='assets/js/js_composer.min.css' type='text/css'
-        media='all' />
-    <script type='text/javascript' src='assets/js/jquery.js'></script>
-    <script type='text/javascript' src='assets/js/jquery-migrate.min.js'></script>
-    <script type='text/javascript' src='assets/js/plugin.js'></script>
-    <script type='text/javascript' src='assets/js/rbtools.min.js'></script>
-    <script type='text/javascript' src='assets/js/rs6.min.js'></script>
-    <script type='text/javascript' src='assets/js/functions-min.js'></script>
-    <link rel="icon" href="assets/favicon.png" sizes="32x32" />
-    <link rel="icon" href="assets/favicon.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="assets/favicon.png" />
-    <meta name="msapplication-TileImage" content="assets/favicon.png" />
-    <script type="text/javascript">
-        function setREVStartSize(e) {
-            try {
-                var pw = document.getElementById(e.c).parentNode.offsetWidth,
-                    newh;
-                pw = pw === 0 || isNaN(pw) ? window.innerWidth : pw;
-                e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
-                e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
-                e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
-                e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
-                e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
-                e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
-                e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
-                if (e.layout === "fullscreen" || e.l === "fullscreen")
-                    newh = Math.max(e.mh, window.innerHeight);
-                else {
-                    e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-                    for (var i in e.rl)
-                        if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
-                    e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
-                    e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-                    for (var i in e.rl)
-                        if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
-
-                    var nl = new Array(e.rl.length),
-                        ix = 0,
-                        sl;
-                    e.tabw = e.tabhide >= pw ? 0 : e.tabw;
-                    e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
-                    e.tabh = e.tabhide >= pw ? 0 : e.tabh;
-                    e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
-                    for (var i in e.rl) nl[i] = e.rl[i] < window.innerWidth ? 0 : e.rl[i];
-                    sl = nl[0];
-                    for (var i in nl)
-                        if (sl > nl[i] && nl[i] > 0) {
-                            sl = nl[i];
-                            ix = i;
-                        }
-                    var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
-
-                    newh = (e.type === "carousel" && e.justify === "true" ? e.gh[ix] : (e.gh[ix] * m)) + (e.tabh + e.thumbh);
-                }
-
-                if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
-                document.getElementById(e.c).height = newh;
-                window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
-            } catch (e) {
-                console.log("Failure at Presize of Slider:" + e)
-            }
-        };
-    </script>
-    <style id="minimag_option-dynamic-css" title="dynamic-css" class="redux-options-output">
-        body {
-            font-display: swap;
-        }
-
-        h1 {
-            font-display: swap;
-        }
-
-        h2 {
-            font-display: swap;
-        }
-
-        h3 {
-            font-display: swap;
-        }
-
-        h4 {
-            font-display: swap;
-        }
-
-        h5 {
-            font-display: swap;
-        }
-
-        h6 {
-            font-display: swap;
-        }
-    </style><noscript>
-        <style>
-            .wpb_animate_when_almost_visible {
-                opacity: 1;
-            }
-        </style>
-    </noscript>
+	<meta charset="UTF-8">
+	<meta name="author" content="INFLUENCE XXI">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="INFLUENCE XXI || Uncovering influence factors for business success in the 21st Century">
+	<meta name="keywords"
+		content="INFLUENCE XXI || Uncovering influence factors for business success in the 21st Century" />
+	<title>INFLUENCE XXI || Uncovering influence factors for business success in the 21st Century</title>
+	<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body class="page-template-default page page-id-279 singular wpb-js-composer js-comp-ver-6.1 vc_responsive">
-    <!-- Header Section -->
-    <header class="container-fluid no-left-padding no-right-padding header_s header_s1 header-fix">
-        <!-- SidePanel -->
-        <div id="slidepanel-1" class="slidepanel">
-            <!-- Top Header -->
-            <div class="container-fluid no-right-padding no-left-padding top-header">
-                <!-- Container -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-6">
-                            <ul class="top-social">
-                                <!-- <li>
-                                    <a href="#" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </li> -->
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-6 logo-block">
-                            <a class="image-logo" href="/">
-                                <img src="https://influencexxi.newmark-imc.com/cimg/logo.png" alt="influencexxi" />
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-6">
-                            <ul class="top-right user-info">
-                                <li>
-                                    <!-- <a href="#search-box" data-toggle="collapse" class="search collapsed"
-										title="Search"> -->
-                                    <!-- <i class="fas fa-search sr-ic-open"></i> -->
-                                    <!-- <button class="btn btn-primary btn-sm">Upcoming sessions</button> -->
-                                    <!-- <i class="fas fa-times sr-ic-close"></i> -->
+<body>
+	<!-- Preloader Start -->
+	<!-- <div class="preloader"></div> -->
+	<!-- Preloader End -->
+	<!-- header Start -->
+	<header class="header-style-two" data-scroll-index="0">
+		<div class="header-wrapper">
+			<!-- <div class="header-top-area bg-gradient-color d-none d-lg-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 header-top-left-part">
+							<span class="address"><i class="webexflaticon flaticon-placeholder-1"></i> Newmark IMC: Ole Odume Road, Off Ngong Road</span>
+							<span class="phone"><i class="webexflaticon flaticon-send"></i> hello@newmark-imc.com</span>
+						</div>
+						<div class="col-lg-6 header-top-right-part text-right">
+							<ul class="social-links">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							</ul>
+							<div class="language">
+								<a class="language-btn" href="#"><i class="webexflaticon flaticon-internet"></i> English</a>
+								<ul class="language-dropdown">
+									<li><a href="#">English</a></li>
+									<li><a href="#">Bangla</a></li>
+									<li><a href="#">French</a></li>
+									<li><a href="#">Spanish</a></li>
+									<li><a href="#">Arabic</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="header-navigation-area two-layers-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="/">
+								<img id="logo-image" class="img-center" src="images/logo.png" alt="">
+							</a>
+							<div class="mobile-menu-right"></div>
 
-                                    <!-- </a> -->
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Container /- -->
-            </div>
-            <!-- Top Header /- -->
-        </div>
-        <!-- SidePanel /- -->
-
-        <!-- Menu Block -->
-        <div class="container-fluid no-left-padding no-right-padding menu-block">
-            <!-- Container -->
-            <div class="container">
-                <div class="nav-wrapper">
-                    <!-- Nav Wrapper -->
-                    <nav class="navbar ownavigation stickywrapper navbar-expand-lg">
-                        <div class="navheader">
-                            <a class="image-logo" href="/">
-                                <img src="https://influencexxi.newmark-imc.com/cimg/logo.png" alt="influencexxi" />
-                            </a>
-                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                                data-target="#navbar1" aria-controls="navbar1" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                            <div id="loginpanel-1" class="desktop-hide">
-                                <div class="right toggle" id="toggle-1">
-                                    <a id="slideit-1" class="slideit" href="#slidepanel">
-                                        <i class="fas fa-briefcase"></i>
-                                    </a>
-                                    <a id="closeit-1" class="closeit" href="#slidepanel">
-                                        <i class="fas fa-times"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navbar1">
-                            <ul id="menu-main-menu" class="navbar-nav">
-                                <li id="menu-item-89"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-89 dropdown">
-
-                                    <!-- <a title="Home" href="/" class="dropdown-toggle nav-link" aria-haspopup="true">Home
-									</a> -->
-                                    <!-- <ul role="menu" class=" dropdown-menu">
-										<li id="menu-item-400"
-											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-400 dropdown">
-											<a title="Home 2" href="#" class="nav-link">Home 2 <i
-													class='fas fa-angle-right'></i></a>
-
-											<ul role="menu" class=" dropdown-menu">
-												<li id="menu-item-91"
-													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
-													<a title="Home 2" href="#" class="nav-link">Home 2</a>
-												</li>
-												<li id="menu-item-92"
-													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92">
-													<a title="Home 3" href="#" class="nav-link">Home 3</a>
-												</li>
-
-
-											</ul>
-										</li>
-										<li id="menu-item-101"
-											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
-											<a title="Home Food" href="#" class="nav-link">Home Food</a>
-										</li>
-									</ul> -->
-                                </li>
-                                <li id="menu-item-255"
-                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-255 dropdown">
-                                    <a title="Posts" href="#/" class="dropdown-toggle nav-link" aria-haspopup="true">
-                                        Curiosity bites
-                                        <!-- <i class='fas fa-angle-down'></i> -->
-                                    </a>
-
-                                    <!-- <ul role="menu" class=" dropdown-menu">
-										<li id="menu-item-256"
-											class="menu-item menu-item-type-post_type menu-item-object-post menu-item-256">
-											<a title="Blog Post" href="#" class="nav-link">Blog Post</a>
-										</li>
-									</ul> -->
-                                </li>
-                                <li id="menu-item-106"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106 dropdown">
-                                    <a title="Pages" href="newsletters.html" class="dropdown-toggle nav-link"
-                                        aria-haspopup="true">
-                                        <!-- Pages  -->
-                                        Newsletters
-                                        <!-- <i class='fas fa-angle-down'></i> -->
-                                    </a>
-
-                                <li id="menu-item-111 "
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111 ">
-                                    <a style="background-color: rgb(5, 5, 224); padding: 5px; color: white; font-weight: 600"
-                                        title="Contact Us " href="# " class="btn btn-primary btn-sm nav-link ">
-                                        Upcoming sessions
-                                    </a>
-                                </li>
-
-                                <!-- <button class="btn btn-primary btn-sm ">Upcoming sessions</button> -->
-                                <!-- <ul role="menu " class=" dropdown-menu ">
-										<li id="menu-item-193 "
-											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-193 dropdown ">
-											<a title="Header " href="# " class="nav-link ">Header</a><i
-												class='ddl-switch fa fa-angle-down'></i>
-
-											<ul role="menu " class=" dropdown-menu ">
-												<li id="menu-item-192 "
-													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192 ">
-													<a title="Header 1 " href="# " class="nav-link ">Header 1</a>
-												</li>
-												<li id="menu-item-191 "
-													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191 ">
-													<a title="Header 2 " href="# " class="nav-link ">Header 2</a>
-												</li>
-											</ul>
-										</li>
-										<li id="menu-item-201 "
-											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-201 dropdown ">
-											<a title="Footer " href="# " class="nav-link ">Footer</a><i
-												class='ddl-switch fa fa-angle-down'></i>
-
-											<ul role="menu " class=" dropdown-menu ">
-												<li id="menu-item-200 "
-													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200 ">
-													<a title="Footer 1 " href="# " class="nav-link ">Footer 1</a>
-												</li>
-											</ul>
-										</li>
-									</ul> -->
-                                </li>
-                                <!-- <li id="menu-item-867 "
-									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-867 "><a
-										title="Travel " href="# " class="nav-link ">Travel</a></li>
-								<li id="menu-item-868 "
-									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-868 "><a
-										title="food " href="# " class="nav-link ">food</a></li>
-								<li id="menu-item-110 "
-									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-110 dropdown ">
-									<a title="About Us " href="# " class="dropdown-toggle nav-link "
-										aria-haspopup="true ">About Us <i class='fas fa-angle-down'></i></a>
-
-									<ul role="menu " class=" dropdown-menu ">
-										<li id="menu-item-109 "
-											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109 ">
-											<a title="About Us No Sidebar " href="# " class="nav-link ">About Us No
-												Sidebar</a>
-										</li>
-										<li id="menu-item-108 "
-											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108 ">
-											<a title="About Me " href="# " class="nav-link ">About Me</a>
-										</li>
-										<li id="menu-item-107 "
-											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107 ">
-											<a title="About Me No sidebar " href="# " class="nav-link ">About Me No
-												sidebar</a>
-										</li>
+							<div class="main-menu f-right">
+								<nav id="mobile-menu-right">
+									<ul class="one-pagenav">
+										<li><a href="#">CURIOSITY BITES</a></li>
+										<li><a href="#">NEWSLETTERS</a></li>
+										<li><a href="#">UPCOMING SESSIONS</a></li>
+										<!-- <li><a href="#home" data-scroll-nav="0">Home</a></li>
+										<li><a href="#about" data-scroll-nav="1">About</a></li>
+										<li><a href="#service" data-scroll-nav="2">Service</a></li>
+										<li><a href="#team" data-scroll-nav="3">Team</a></li>
+										<li><a href="#case-study" data-scroll-nav="4">Case Study</a></li>
+										<li><a href="#news" data-scroll-nav="5">News</a></li> -->
 									</ul>
-								</li> -->
-                                <!-- <li id="menu-item-111 "
-									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111 "><a
-										title="Contact Us " href="# " class="nav-link ">Contact Us</a></li> -->
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <!-- Nav Wrapper /- -->
-            </div>
-            <!-- Container /- -->
-        </div>
-        <!-- Menu Block /- -->
-        <!-- Search Box -->
-        <div class="search-box collapse " id="search-box ">
-            <div class="container ">
-                <div class="header-search ">
-                    <form method="get " id="445 " class="searchform " action="# ">
-                        <div class="input-group ">
-                            <input type="text " name="s " id="s-445 " placeholder="Search... " class="form-control "
-                                required>
-                            <span class="input-group-btn ">
-                                <button class="btn btn-secondary " type="submit "><i class="pe-7s-search "></i></button>
-                            </span>
-                        </div>
-                        <!-- /input-group -->
-                    </form>
-                </div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header End -->
+	<!-- Home Slider Start -->
+	<section id="home" class="banner-section">
+		<div class="home-carousel owl-theme owl-carousel">
+			<div class="slide-item">
+				<div class="image-layer" data-background="images/bg/14.jpg"></div>
+				<div class="auto-container">
+					<div class="row clearfix">
+						<div class="col-xl-8 col-lg-12 col-md-12 content-column">
+							<div class="content-box">
+								<h1>Executive Voices</h1>
+								<!-- <p>We have almost 35+ years of experience for <br>providing consulting services solutions</p> -->
+								<div class="btn-box">
+									<a href="#about" data-scroll-nav="1" class="cs-btn-one btn-gradient-color">View</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-item">
+				<div class="image-layer" data-background="images/bg/7.jpg"></div>
+				<div class="auto-container">
+					<div class="row clearfix">
+						<div class="col-xl-8 col-lg-12 col-md-12 content-column">
+							<div class="content-box">
+								<h1>Masterclasses</h1>
+								<!-- <p>We have almost 35+ years of experience for <br>providing consulting services solutions</p> -->
+								<div class="btn-box">
+									<a href="#" class="cs-btn-one btn-gradient-color">View</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Home Slider End -->
+	<!-- Feature Section Start -->
+	<section id="about" class="feature-section pdt-110 pdb-130 bg-silver-light bg-no-repeat"
+		data-background="images/bg/abs-bg5.png" data-scroll-index="1">
+		<hr>
+		<h4 class="text-center" style="margin-bottom: 30px;">InfluenceXXI is uncovering influence factors for business
+			success in the 21st Century</h4>
+		<hr>
+		<div class="container">
+			<h3 class="text-center" style="margin-bottom:20px">Executive voices</h3>
+			<div class="row">
 
-                <div class="pages-search ">
-                    <form method="get " id="160 " class="searchform " action="# ">
-                        <div class="input-group ">
-                            <input type="text " name="s " id="s-160 " placeholder="Search... " class="form-control "
-                                required>
-                            <span class="input-group-btn ">
-                                <button class="btn btn-default " type="submit "><i class="fas fa-search "></i></button>
-                            </span>
-                        </div>
-                        <!-- /input-group -->
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- Search Box /- -->
-    </header>
-    <!-- Header Section /- -->
-    <main id="main " class="site-main ">
+				<div class="col-md-6 col-xl-4">
+					<div class="feature-box mrb-lg-60">
+						<div class="feature-thumb">
+							<iframe width="371" height="200" src="https://www.youtube.com/embed/XrcjCrdzVlw"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="feature-content">
+							<div class="para">
+								<p>INFLUENCE XXI - Win the 21st Century</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="col-md-6 col-xl-4">
+					<div class="feature-box mrb-lg-60">
+						<div class="feature-thumb">
+							<iframe width="371" height="200" src="https://www.youtube.com/embed/X05pcxq8RkY"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="feature-content">
+							<div class="para">
+								<p>RACE AND BRANDING 2020</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        <div class="container-fluid no-padding ">
+				<div class="col-md-6 col-xl-4">
+					<div class="feature-box mrb-lg-60">
+						<div class="feature-thumb">
+							<iframe width="371" height="200" src="https://www.youtube.com/embed/z7iP5q1q5aY"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+							<div class="feature-content">
+								<div class="para">
+									<p>How can Social Entrepreneurs Grow their Influence amidst Uncertainty?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-md-6 col-xl-4">
+					<div class="feature-box mrb-lg-60">
+						<div class="feature-thumb">
+							<img class="img-full" src="images/feature/f2.png" alt="">
+						</div>
+						<div class="feature-content">
+							<div class="title">
+								<h3>Complete Analysis</h3>
+							</div>
+							<div class="para">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est amet similique ipsum reprehenderit sed.</p>
+							</div>
+							<div class="link">
+								<a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-4">
+					<div class="feature-box">
+						<div class="feature-thumb">
+							<img class="img-full" src="images/feature/f3.png" alt="">
+						</div>
+						<div class="feature-content">
+							<div class="title">
+								<h3>Optimal Solution</h3>
+							</div>
+							<div class="para">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est amet similique ipsum reprehenderit sed.</p>
+							</div>
+							<div class="link">
+								<a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				</div>
 
-            <div class="row ">
+				<div class="col-md-6 col-xl-4">
+					<div class="feature-box mrb-lg-60">
+						<div class="feature-thumb">
+							<iframe width="371" height="200" src="https://www.youtube.com/embed/vtirmcQ3jNQ"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="feature-content">
+							<div class="para">
+								<p>Evolving the brand amid fear and anxiety</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- Feature Section End -->
+	<!-- News Section Start -->
+	<section id="news" class="bg-silver-light pdb-80" data-background="images/bg/abs-bg4.png" data-scroll-index="5">
+		<div class="section-title mrb-30 mrb-md-60">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-xl-6">
+						<h2 class="mrb-30">Though leadership</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-6 col-xl-4">
+						<div class="news-wrapper mrb-30 mrb-sm-40">
+							<div class="news-thumb">
+								<img class="img-full" src="images/blogs/1.jpeg" alt="" height="10">
+							</div>
+							<div class="news-details">
+								<div class="news-description mb-20">
+									<h4 class="the-title mrb-30"><a
+											href="in-africa-Identity-must-be-a-central-feature-of-brand-strategies.html">IN
+											AFRICA, IDENTITY MUST BE A CENTRAL FEATURE OF BRAND STRATEGIES</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-4">
+						<div class="news-wrapper mrb-30 mrb-sm-40">
+							<div class="news-thumb">
+								<img class="img-full" src="images/blogs/2.jpg" alt="">
+							</div>
+							<div class="news-details">
+								<div class="news-description mb-20">
+									<h4 class="the-title mrb-30"><a href="the-inﬂuence-XXI-toolkit.html">THE INFLUENCE
+											XXI TOOLKIT</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-4">
+						<div class="news-wrapper mrb-30 mrb-sm-40">
+							<div class="news-thumb">
+								<img class="img-full" src="images/blogs/3.png" alt="">
+							</div>
+							<div class="news-details">
+								<div class="news-description mb-20">
+									<h4 class="the-title mrb-30"><a
+											href="top-3-Pan-African-Institutions-Steering-Africa’s-Engagement-With-The-World.html">TOP
+											3 PAN AFRICAN INSTITUTIONS STEERING AFRICA’S ENGAGEMENT WITH THE WORLD</a>
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- News Section End -->
 
-                <div class="content-area no-sidebar col-xl-12 col-lg-12 col-md-12 ">
-                    <div id="post-279 " class="post-279 page type-page status-publish hentry ">
+	<!-- Clients Section Start -->
+	<section class="pdt-60 pdb-90">
+		<div class="section-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="owl-carousel client-items">
+							<div class="client-item">
+								<img style="height: 100px;" src="images/clients/5.png" alt="">
+							</div>
+							<div class="client-item">
+								<img style="height: 100px;" src="images/clients/6.png" alt="">
+							</div>
+							<div class="client-item">
+								<img style="height: 100px;" src="images/clients/CapitalClub.jpeg" alt="">
+							</div>
+							<div class="client-item">
+								<img style="height: 100px;" src="images/clients/Newmark.jpeg" alt="">
+							</div>
+							<div class="client-item">
+								<img style="height: 100px;" src="images/clients/Weza1.jpeg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Clients Section End -->
 
+	<!-- Footer Area Start -->
+	<footer class="footer">
+		<div class="container-fluid bg-danger p-5 no-left-padding no-right-padding footer-widget ">
+			<!-- Container -->
+			<div class="container ">
+				<div class="row ">
+					<div class="col-lg-2 col-sm-6 ">
 
-                        <div class="entry-content ">
+					</div>
+					<div class="col-lg-5 col-sm-6 ">
+						<span style="font-size: 20px; color:white">Want to partner with us or to just have a chat
+							?</span>
+					</div>
+					<div class="col-lg-4 col-sm-6 ">
+						<button class="btn btn-outline-light ">Get in Touch</button>
+					</div>
+				</div>
+			</div>
+			<!-- Container -->
+		</div>
+		<div class="footer-main-area" data-background="images/footer-bg.png">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-6 col-md-6">
+						<div class="widget footer-widget">
+							<!-- <img src="images/logo-footer.png" alt="" class="mrb-20"> -->
+							<address class="mrb-25">
+								<p class="text-light-gray"><i class="fas fa-location-arrow mrr-10"></i> Newmark IMC: Ole
+									Odume Road, Off Ngong Road, Consumate Court, Block C10, P.O Box. 22429 - 00100,
+									Nairobi, Kenya</p>
+								<div class="mrb-10"><a href="#" class="text-light-gray"><i
+											class="fas fa-phone-alt mrr-10"></i>+254(0)73-011-2021 | +254 (0)202 331 648
+										| +254 (0)4402473 | +254 (0)706111777</a></div>
+								<div class="mrb-10"><a href="#" class="text-light-gray"><i
+											class="fas fa-envelope mrr-10"></i>hello@newmark-imc.com</a></div>
+								<!-- <div class="mrb-0"><a href="#" class="text-light-gray"><i class="fas fa-globe mrr-10"></i>www.domainname.com</a></div> -->
+							</address>
+							<ul class="social-list">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-6 col-md-6">
+					</div>
+					<div class="col-xl-2 col-lg-6 col-md-6">
+					</div>
+					<div class="col-xl-4 col-lg-6 col-md-6">
+						<div class="widget footer-widget">
+							<h5 class="widget-title text-white mrb-30">Tweets</h5>
+							<a class="twitter-timeline" data-height="200" data-theme="dark"
+								data-chrome="nofooter noborders noheader noscrollbar transparent"
+								href="https://twitter.com/NEWMARKWORLD?ref_src=twsrc%5Etfw">Tweets by NEWMARKWORLD</a>
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-                            <div class="vc_row wpb_row vc_row-fluid ">
-                                <div class="wpb_column vc_column_container vc_col-sm-12 ">
-                                    <div class="vc_column-inner ">
-                                        <div class="wpb_wrapper ">
-                                            <!-- Slider Section -->
-                                            <div
-                                                class="container-fluid no-left-padding no-right-padding slider-section slider-section7 ">
-                                                <div class="image-loader spinner-image ">
-                                                    <div class="spinner ">
-                                                        <div class="dot1 "></div>
-                                                        <div class="dot2 "></div>
-                                                        <div class="bounce1 "></div>
-                                                        <div class="bounce2 "></div>
-                                                        <div class="bounce3 "></div>
-                                                    </div>
-                                                </div>
-                                                <div class="slider-carousel slider-carousel-7 center ">
-                                                    <div class="item ">
-                                                        <div class="post-box ">
-                                                            <img width="1164 " height="500 "
-                                                                src="assets/img/business-1-1164x500.jpg "
-                                                                class="attachment-minimag_1164_500 size-minimag_1164_500 wp-post-image "
-                                                                alt=" " />
-                                                            <!-- <img width="1164 " height="500 " src="assets/img/sliders/1.jpg " class="attachment-minimag_1164_500 size-minimag_1164_500 wp-post-image " alt=" " /> -->
-                                                            <div class="entry-content ">
-                                                                <h3>
-                                                                    <a title="Executive Voices">
-                                                                        <!-- Traffic Jams Solved -->
-                                                                        Executive Voices
-                                                                    </a>
-                                                                </h3>
-                                                                <a title="View ">
-                                                                    View </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item ">
-                                                        <div class="post-box ">
-                                                            <img width="1164 " height="500 "
-                                                                src="assets/img//business-2-1164x500.jpg "
-                                                                class="attachment-minimag_1164_500 size-minimag_1164_500 wp-post-image "
-                                                                alt=" " />
-                                                            <div class="entry-content ">
-                                                                <h3 style="text-transform: capitalize !important "><a
-                                                                        title="Though leadership">
-                                                                        Though leadership
-                                                                    </a></h3>
-                                                                <a title="View ">
-                                                                    View </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item ">
-                                                        <div class="post-box ">
-                                                            <img width="1164 " height="500 "
-                                                                src="assets/img/business-3-1164x500.jpg "
-                                                                class="attachment-minimag_1164_500 size-minimag_1164_500 wp-post-image "
-                                                                alt=" " />
-                                                            <div class="entry-content ">
-                                                                <h3><a itle="Masterclasses ">
-                                                                        Masterclasses
-                                                                    </a></h3>
-                                                                <a title="View ">
-                                                                    View </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Slider Section /- -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vc_row wpb_row vc_row-fluid ">
-                                <div class="spadding "></div>
-                                <h4 class="text-center quote">InfluenceXXI is uncovering influence factors for business
-                                    success in the 21st Century</h4>
-                                <div class="wpb_column vc_column_container vc_col-sm-12 ">
-                                    <div class="vc_column-inner ">
-                                        <div class="wpb_wrapper ">
-                                            <!-- Page Content -->
-                                            <div
-                                                class="container-fluid no-left-padding no-right-padding post-3-column ">
-                                                <!-- Container -->
-                                                <div class="container ">
-                                                    <div class="row ">
-                                                        <!-- Content Area -->
-                                                        <div class="col-lg-12 col-md-12 content-area ">
-                                                            <h1 class="text-center header">Executive voices</h1>
-
-                                                                <div class="row ">
-
-                                                                    <div class="col-lg-4 col-md-6 col-sm-6 ">
-                                                                        <div
-                                                                            class="post-559 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                    <iframe width="1974" height="786" src="https://www.youtube.com/embed/XrcjCrdzVlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                                            </div>
-                                                                            <div class="entry-content ">
-                                                                                <div class="entry-header ">
-                                                                                    <h5 class="entry-title ">
-                                                                                        <a title="INFLUENCE XXI - Win the 21st Century">
-                                                                                            INFLUENCE XXI - Win the 21st Century
-                                                                                        </a>
-                                                                                    </h5>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-6 col-sm-6 ">
-                                                                        <div
-                                                                            class="post-556 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <iframe width="1974" height="786" src="https://www.youtube.com/embed/X05pcxq8RkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                                            </div>
-                                                                            <div class="entry-content ">
-                                                                                <div class="entry-header ">
-                                                                                    <h3 class="entry-title ">
-                                                                                        <a title="RACE AND BRANDING 2020">RACE AND BRANDING 2020</a>
-                                                                                    </h3>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-6 col-sm-6 ">
-                                                                        <div
-                                                                            class="post-553 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <iframe width="1974" height="786" src="https://www.youtube.com/embed/z7iP5q1q5aY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                                            </div>
-                                                                            <div class="entry-content ">
-                                                                                <div class="entry-header ">
-                                                                                    <h3 class="entry-title ">
-                                                                                        <a title="How can Social Entrepreneurs Grow their Influence amidst Uncertainty?">
-                                                                                            How can Social Entrepreneurs Grow their Influence amidst Uncertainty?
-                                                                                        </a>
-                                                                                    </h3>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-6 col-sm-6 ">
-                                                                        <div
-                                                                            class="post-553 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <iframe width="1974" height="786" src="https://www.youtube.com/embed/vtirmcQ3jNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                                                            </div>
-                                                                            <div class="entry-content ">
-                                                                                <div class="entry-header ">
-                                                                                    <h3 class="entry-title ">
-                                                                                        <a title="Evolving the brand amid fear and anxiety ">
-                                                                                            Evolving the brand amid fear and anxiety 
-                                                                                        </a>
-                                                                                    </h3>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <div class="row ">
-                                                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                                                        <h1 class="text-center header">Though leadership
-                                                                            </h3>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-6 col-sm-6 ">
-                                                                        <div
-                                                                            class="post-559 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <div class="post-meta ">
-                                                                                    <span class="byline ">by <a
-                                                                                            href="in-africa-Identity-must-be-a-central-feature-of-brand-strategies.html "
-                                                                                            title="Minimag ">NewMark</a>
-                                                                                    </span>
-                                                                                    <span class="post-date ">
-                                                                                        <a
-                                                                                            href="in-africa-Identity-must-be-a-central-feature-of-brand-strategies.html ">June
-                                                                                            10, 2021</a>
-                                                                                    </span>
-                                                                                </div>
-                                                                                <a
-                                                                                    href="in-africa-Identity-must-be-a-central-feature-of-brand-strategies.html ">
-                                                                                    <img style="width: 370px; height:200px "
-                                                                                        src="assets/img/1.jpeg "
-                                                                                        class="attachment-minimag_370_247 size-minimag_370_247 wp-post-image "
-                                                                                        alt=" "
-                                                                                        sizes="(max-width: 370px) 100vw, 370px " />
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="entry-content ">
-                                                                                <div class="entry-header ">
-                                                                                    <h3 class="entry-title ">
-                                                                                        <a href="in-africa-Identity-must-be-a-central-feature-of-brand-strategies.html "
-                                                                                            title="In Africa, Identity must be a central feature of brand strategies ">
-                                                                                            In Africa, Identity must be
-                                                                                            a central feature of brand
-                                                                                            strategies
-                                                                                        </a>
-                                                                                    </h3>
-                                                                                </div>
-                                                                                <p>
-                                                                                    As I arrived at the third viewing
-                                                                                    platform which is closest to the
-                                                                                    largest section of the Victoria
-                                                                                    Falls in Zimbabwe, I was awed by
-                                                                                    the....
-                                                                                </p>
-                                                                                <a href="in-africa-Identity-must-be-a-central-feature-of-brand-strategies.html "
-                                                                                    title="Read More ">
-                                                                                    Read More </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-6 col-sm-6 ">
-                                                                        <div
-                                                                            class="post-556 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <div class="post-meta ">
-                                                                                    <span class="byline ">by <a
-                                                                                            href="the-inﬂuence-XXI-toolkit.html "
-                                                                                            title="Minimag ">Newmac</a>
-                                                                                    </span>
-                                                                                    <span class="post-date ">
-                                                                                        <a
-                                                                                            href="the-inﬂuence-XXI-toolkit.html ">June
-                                                                                            11, 2021</a>
-                                                                                    </span>
-                                                                                </div>
-                                                                                <a
-                                                                                    href="the-inﬂuence-XXI-toolkit.html ">
-                                                                                    <img style="width: 370px; height:200px "
-                                                                                        src="assets/img/2.jpg "
-                                                                                        class="attachment-minimag_370_247 size-minimag_370_247 wp-post-image "
-                                                                                        alt=" "
-                                                                                        sizes="(max-width: 370px) 100vw, 370px " />
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="entry-content ">
-                                                                                <div class="entry-header ">
-                                                                                    <h3 class="entry-title ">
-                                                                                        <a href="the-inﬂuence-XXI-toolkit.html "
-                                                                                            title="The Inﬂuence XXI Toolkit ">The
-                                                                                            Inﬂuence XXI Toolkit</a>
-                                                                                    </h3>
-                                                                                </div>
-                                                                                <p>
-                                                                                    Nearly each of the 171 billion brain
-                                                                                    cells (20 billion of which make up
-                                                                                    our neocortex) are optimized to
-                                                                                    ensure human survival, facilitate
-                                                                                    collaboration..
-                                                                                </p>
-                                                                                <a href="the-inﬂuence-XXI-toolkit.html "
-                                                                                    title="Read More ">
-                                                                                    Read More </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-4 col-md-6 col-sm-6 ">
-                                                                        <div
-                                                                            class="post-553 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <div class="post-meta ">
-                                                                                    <span class="post-date ">
-                                                                                        <a
-                                                                                            href="top-3-Pan-African-Institutions-Steering-Africa’s-Engagement-With-The-World.html ">June
-                                                                                            10, 2021</a>
-                                                                                    </span>
-                                                                                </div>
-                                                                                <a
-                                                                                    href="top-3-Pan-African-Institutions-Steering-Africa’s-Engagement-With-The-World.html ">
-                                                                                    <img style="width: 370px; height:200px "
-                                                                                        src="assets/img/3.png "
-                                                                                        class="attachment-minimag_370_247 size-minimag_370_247 wp-post-image "
-                                                                                        alt=" "
-                                                                                        sizes="(max-width: 370px) 100vw, 370px " />
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="entry-content ">
-                                                                                <div class="entry-header ">
-                                                                                    <h3 class="entry-title ">
-                                                                                        <a href="top-3-Pan-African-Institutions-Steering-Africa’s-Engagement-With-The-World.html "
-                                                                                            title="Top 3 Pan African Institutions Steering Africa’s Engagement With The World ">
-                                                                                            Top 3 Pan African
-                                                                                            Institutions Steering
-                                                                                            Africa’s Engagement With The
-                                                                                            World
-                                                                                        </a>
-                                                                                    </h3>
-                                                                                </div>
-                                                                                <p>These cases are perfectly simple and
-                                                                                    easy to distinguish. In a free hour,
-                                                                                    when our...</p>
-                                                                                <a href="top-3-Pan-African-Institutions-Steering-Africa’s-Engagement-With-The-World.html "
-                                                                                    title="Read More ">
-                                                                                    Read More </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <div class="row ">
-                                                                    <!-- <div class="col-lg-12 col-md-12 col-sm-12">
-                                                                        <h3 class="text-center header">
-                                                                            Master classes
-                                                                            </h3>
-                                                                    </div> -->
-                                                                </div>
-                                                                
-                                                                <!-- Row /- -->
-
-                                                                <div class="row ">
-                                                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                                                        <h1 class="text-center header">A Stellar Cast of Partners</h1>
-                                                                    </div>
-                                                                    <div class="col-lg-2 col-md-6 col-sm-6 ">
-                                                                        <div class="post-559 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <div class="entry-cover">
-                                                                                        <img style="width: 200px; height:100px "src="assets/img/logos/5.png"
-                                                                                            class="attachment-minimag_370_247 size-minimag_370_247 wp-post-image "
-                                                                                            alt=" "
-                                                                                            />
-                                                                                </div>                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-2 col-md-6 col-sm-6 ">
-                                                                        <div class="post-559 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <div class="entry-cover">
-                                                                                        <img style="width: 200px; height:100px "src="assets/img/logos/6.png"
-                                                                                            class="attachment-minimag_370_247 size-minimag_370_247 wp-post-image "
-                                                                                            alt=" "
-                                                                                            sizes="(max-width: 370px) 100vw, 370px " />
-                                                                                </div>                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-2 col-md-6 col-sm-6 ">
-                                                                        <div class="post-559 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <div class="entry-cover">
-                                                                                        <img style="width: 200px; height:100px "src="assets/img/logos/CapitalClub.jpeg"
-                                                                                            class="attachment-minimag_370_247 size-minimag_370_247 wp-post-image "
-                                                                                            alt=" "
-                                                                                            sizes="(max-width: 370px) 100vw, 370px " />
-                                                                                </div>                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-2 col-md-6 col-sm-6 ">
-                                                                        <div class="post-559 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <div class="entry-cover">
-                                                                                        <img style="width: 200px; height:100px "src="assets/img/logos/Newmark.jpeg"
-                                                                                            class="attachment-minimag_370_247 size-minimag_370_247 wp-post-image "
-                                                                                            alt=" "
-                                                                                            sizes="(max-width: 370px) 100vw, 370px " />
-                                                                                </div>                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-2 col-md-6 col-sm-6 ">
-                                                                        <div class="post-559 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-business ">
-                                                                            <div class="entry-cover ">
-                                                                                <div class="entry-cover">
-                                                                                        <img style="width: 200px; height:100px "src="assets/img/logos/Weza1.jpeg"
-                                                                                            class="attachment-minimag_370_247 size-minimag_370_247 wp-post-image "
-                                                                                            alt=" "
-                                                                                            sizes="(max-width: 370px) 100vw, 370px " />
-                                                                                </div>                                                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                        </div>
-                                                        <!-- Content Area /- -->
-                                                    </div>
-                                                </div>
-                                                <!-- Container /- -->
-                                            </div>
-                                            <!-- Page Content /- -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="spadding "></div>
-                            </div>
-
-
-                        </div>
-                        <!-- .entry-content -->
-
-
-                    </div>
-                    <!-- #post-## -->
-                </div>
-                <!-- content-area + page_layout_css -->
-
-
-            </div>
-            <!-- .container /- -->
-
-        </div>
-        <!-- .row /- -->
-
-    </main>
-    <!-- .site-main -->
-
-    <!-- Footer Main -->
-    <footer class="container-fluid no-left-padding no-right-padding footer-main ">
-        <!-- Footer Widget -->
-        <div class="container-fluid no-left-padding no-right-padding footer-widget ">
-            <!-- Container -->
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-lg-2 col-sm-6 ">
-
-                    </div>
-                    <div class="col-lg-5 col-sm-6 ">
-                        Want to partner with us or to just have a chat ?
-                    </div>
-                    <div class="col-lg-4 col-sm-6 ">
-                        <button class="btn btn-outline-light ">Get in Touch</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Container -->
-        </div>
-        <!-- Footer Widget -->
-
-        <div class="container ">
-
-            <ul class="ftr-social ">
-                <li>
-                    <a href="http://facebook.com/ " target="_blank "><i class="fa fa-facebook "></i>Facebook</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/ " target="_blank "><i class="fa fa-twitter "></i>Twitter</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/ " target="_blank "><i class="fa fa-instagram "></i>Instagram</a>
-                </li>
-                <li>
-                    <a href="https://plus.google.com/ " target="_blank "><i class="fa fa-google-plus "></i>Google
-                        Plus</a>
-                </li>
-                <li>
-                    <a href="https://in.pinterest.com/ " target="_blank "><i
-                            class="fa fa-pinterest-p "></i>Pinterest</a>
-                </li>
-                <li>
-                    <a href="http://youtube.com/ " target="_blank "><i class="fa fa-youtube "></i>Youtube</a>
-                </li>
-            </ul>
-            <div class="copyright ">
-                <p>Copyrights © 2021 SiteName</p>
-            </div>
-        </div>
-        <!-- Container /- -->
-    </footer>
-    <!-- Footer Main /- -->
-    <script type="text/html " id="wpb-modifications "></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var wpcf7 = {
-            "apiSettings ": {
-                "root ": "https:\/\/atixscripts.info\/demo\/minimag\/wp-json\/contact-form-7\/v1 ",
-                "namespace ": "contact-form-7\/v1 "
-            }
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='assets/js/scripts.js'></script>
-    <script type='text/javascript' src='assets/js/wp-embed.min.js'></script>
-    <script type='text/javascript' src='assets/js/js_composer_front.min.js'></script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="text-center">
+							<span class="text-light-gray">Copyright © 2021 | All rights reserved </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Area End -->
+	<!-- BACK TO TOP SECTION -->
+	<div class="back-to-top bg-gradient-color">
+		<i class="fab fa-angle-up"></i>
+	</div>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<!-- Integrated important scripts here -->
+	<script src="js/jquery.v1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://axin.netlify.app/js/scrollIt.min.js"></script>
+	<script src="js/jquery-core-plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$.scrollIt({
+			upKey: 38,                // key code to navigate to the next section
+			downKey: 40,       // the easing function for animation
+			scrollTime: 800,          // how long (in ms) the animation takes
+			activeClass: 'active',    // class given to the active nav element
+			onPageChange: null,       // function(pageIndex) that is called when page is changed
+			topOffset: -80            // offste (in px) for fixed top navigation
+		});
+	</script>
 </body>
 
 </html>
